@@ -1,0 +1,169 @@
+{
+  "allCaffes" : [ {
+    "address" : "Strada D. I. Mendeleev 22, București 030167",
+    "description" : "Funky apothecary-like coffee & tea shop with a big assortment, with sweets, garnishes & accessories.",
+    "id" : "1",
+    "imagelink" : "https://i.ibb.co/KjfBV4W/camera.jpg",
+    "labels" : "",
+    "lat" : 44.44426722,
+    "lon" : 26.09671688,
+    "phone" : "0213111512",
+    "title" : "Camera din Fata",
+    "website" : "http://cameradinfata.ro"
+  }, {
+    "address" : "Strada D. I. Mendeleev 2, București 030167",
+    "description" : "",
+    "id" : "2",
+    "imagelink" : "https://i.ibb.co/XbgQg50/m60.jpg",
+    "labels" : "organic",
+    "lat" : 44.44328696,
+    "lon" : 26.09668347,
+    "phone" : "0314100010",
+    "title" : "M60",
+    "website" : ""
+  }, {
+    "address" : "Strada Pictor Arthur Verona 13-15, București 010312",
+    "description" : "O cafenea intr-o grădină frumoasă, mancare/băutură bună. De iesit romantic vara la o întâlnire sau cu amicii la o bârfă.",
+    "id" : "3",
+    "imagelink" : "https://i.ibb.co/Wg2XCGd/verona.jpg",
+    "labels" : "",
+    "lat" : 44.44280832,
+    "lon" : 26.09966728,
+    "phone" : "0732003060",
+    "title" : "Café Verona",
+    "website" : ""
+  }, {
+    "address" : "Calea Victoriei 45, București 010062",
+    "description" : "",
+    "id" : "4",
+    "imagelink" : "https://i.ibb.co/TmDmqhw/artichoke.jpg",
+    "labels" : "",
+    "lat" : 44.4378796,
+    "lon" : 26.09654873,
+    "phone" : "0771707869",
+    "title" : "Artichoke Social House",
+    "website" : ""
+  }, {
+    "address" : "Strada Lipscani 9, București 050971",
+    "description" : "Stylish specialty coffee shop by day, trendy cocktail bar by night, with a terrace & light snacks.",
+    "id" : "5",
+    "imagelink" : "https://i.ibb.co/n74KxfL/origo.jpg",
+    "labels" : "",
+    "lat" : 44.43319723,
+    "lon" : 26.09527355,
+    "phone" : "0757086689",
+    "title" : "Origo",
+    "website" : ""
+  }, {
+    "address" : "Bulevardul Regina Elisabeta 40, București 030167",
+    "description" : "",
+    "id" : "6",
+    "imagelink" : "https://i.ibb.co/C6LMwG7/meron.jpg",
+    "labels" : "",
+    "lat" : 44.43479153,
+    "lon" : 26.09456976,
+    "phone" : "0372904888",
+    "title" : "Meron Cișmigiu",
+    "website" : ""
+  }, {
+    "address" : "Pasajul Vilacrosse, București 030167",
+    "description" : "Nice place to go out in weekends with friends or in couple. The hookah is great.",
+    "id" : "7",
+    "imagelink" : "https://i.ibb.co/nLmj9xm/bemolle.jpg",
+    "labels" : "",
+    "lat" : 44.4330391,
+    "lon" : 26.0988403,
+    "phone" : "0213118382",
+    "title" : "Bemolle Cafe",
+    "website" : ""
+  }, {
+    "address" : "Bulevardul Regina Elisabeta 5, București 030167",
+    "description" : "Quite nice atmosphere. Nice coffee place downtown Bucharest. One of the best coffee to go. It,s a good start if you need good energy to start visiting the old town.",
+    "id" : "8",
+    "imagelink" : "https://i.ibb.co/SVn0QjY/secondcup.jpg",
+    "labels" : "",
+    "lat" : 44.43448216,
+    "lon" : 26.10103982,
+    "phone" : "0311012219",
+    "title" : "Second Cup",
+    "website" : ""
+  }, {
+    "address" : "Calea Victoriei nr. 21-23, București 030023",
+    "description" : "ne of the nicest coffees in town, the staff is really sociable and friendly, we engaged in interesting conversation every time. Inside the place is uniquely decorated with modern art.",
+    "id" : "9",
+    "imagelink" : "https://i.ibb.co/gDg4XQC/handsomemonk.jpg",
+    "labels" : "",
+    "lat" : 44.43370159,
+    "lon" : 26.09784385,
+    "phone" : "0729662663",
+    "title" : "Handsome Monk Coffee Victoriei",
+    "website" : ""
+  }, {
+    "address" : "Strada Smârdan 9, București 030167",
+    "description" : "Beautiful, affordable location in the old historical centre. Usually this part of the city is full of tourist traps or every nice location is ridiculously expensive, but not this one. It looks really nice, very good for photos.",
+    "id" : "10",
+    "imagelink" : "https://i.ibb.co/yWLPCSR/vangogh.jpg",
+    "labels" : "",
+    "lat" : 44.4324044,
+    "lon" : 26.10010692,
+    "phone" : "0770117279",
+    "title" : "Grand Café Van Gogh",
+    "website" : ""
+  }, {
+    "address" : "Calea Victoriei 20, București 030027",
+    "description" : "",
+    "id" : "11",
+    "imagelink" : "https://i.ibb.co/gdW74NJ/ganesha.jpg",
+    "labels" : "",
+    "lat" : 44.43329407,
+    "lon" : 26.09804554,
+    "phone" : "0748336677",
+    "title" : "Ganesha Caffe - Victoriei",
+    "website" : "ganeshacaffevictoriei.ro"
+  }, {
+    "address" : "Strada Academiei 2, București 030167",
+    "description" : "",
+    "id" : "12",
+    "imagelink" : "https://i.ibb.co/JQMPfbF/coffeeshop1.jpg",
+    "labels" : "",
+    "lat" : 44.43415031,
+    "lon" : 26.09973753,
+    "phone" : "0741240516",
+    "title" : "The Coffee Shop",
+    "website" : ""
+  } ],
+  "newCaffes" : [ {
+    "address" : "Strada D. I. Mendeleev 22, București 030167",
+    "description" : "Funky apothecary-like coffee & tea shop with a big assortment, with sweets, garnishes & accessories.",
+    "id" : "1",
+    "imagelink" : "https://i.ibb.co/KjfBV4W/camera.jpg",
+    "labels" : "",
+    "lat" : 44.44426722,
+    "lon" : 26.09671688,
+    "phone" : "0213111512",
+    "title" : "Camera din Fata",
+    "website" : "cameradinfata.ro"
+  }, {
+    "address" : "Strada D. I. Mendeleev 2, București 030167",
+    "description" : "",
+    "id" : "2",
+    "imagelink" : "https://i.ibb.co/XbgQg50/m60.jpg",
+    "labels" : "",
+    "lat" : 44.44328696,
+    "lon" : 26.09668347,
+    "phone" : "0314100010",
+    "title" : "M60",
+    "website" : "https://i.ibb.co/xD0k0g9/m60.jpg"
+  }, {
+    "address" : "Strada Pictor Arthur Verona 13-15, București 010312",
+    "description" : "O cafenea intr-o grădină frumoasă, mancare/băutură bună. De iesit romantic vara la o întâlnire sau cu amicii la o bârfă.",
+    "id" : "3",
+    "imagelink" : "https://i.ibb.co/Wg2XCGd/verona.jpg",
+    "labels" : "",
+    "lat" : 44.44280832,
+    "lon" : 26.09966728,
+    "phone" : "0732003060",
+    "title" : "Café Verona",
+    "website" : ""
+  } ]
+}
