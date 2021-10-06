@@ -1,7 +1,15 @@
 # MultipurposeSwiftCoffeeApp
 An iOS Swift app that showcases many features. A 1st year University of Bucharest Master course app.
 
+![Screenshot](images/1.png)
+![Screenshot](images/2.png)
+![Screenshot](images/3.png)
+![Screenshot](images/4.png)
+
+
 As you can see in the pictures, this is a very basic app in terms of UX. Nevertheless, in order to solidify my knowledge in developing iOS apps and play with stuff I have never played before, I created this project in order to present it further to my teacher at the Univeristy of Bucharest. Please bear in mind that the app uses the MVVM pattern. It is not perfect nor completed.
+
+You need to have cocoapods installed and you must run *pod install* in terminal in the project directory. Then open the workspace of the app.
 
 ## So, what does it do? 
 
