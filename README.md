@@ -1,10 +1,8 @@
 # MultipurposeSwiftCoffeeApp
 An iOS Swift app that showcases many features. 
 
-<img width="200" alt="Screenshot 2024-05-28 at 13 11 34" src="images/1.png">
-<img width="200" alt="Screenshot 2024-05-28 at 13 11 34" src="images/2.png">
-<img width="200" alt="Screenshot 2024-05-28 at 13 11 34" src="images/3.png">
-<img width="200" alt="Screenshot 2024-05-28 at 13 11 34" src="images/4.png">
+<img width="200" alt="Screenshot 2024-05-28 at 13 11 34" src="images/1.png"> <img width="200" alt="Screenshot 2024-05-28 at 13 11 34" src="images/2.png">
+<img width="200" alt="Screenshot 2024-05-28 at 13 11 34" src="images/3.png"> <img width="200" alt="Screenshot 2024-05-28 at 13 11 34" src="images/4.png">
 
 # Important  
 As you can see in the pictures, this is a very basic app in terms of UX. Nevertheless, in order to solidify my knowledge in developing iOS apps and play with stuff I have rarely used before, I created this project in order to present it further to my teacher at the Univeristy of Bucharest. Please bear in mind that the app uses the MVVM pattern. It is not perfect nor completed. I have worked on more complex apps using Routers, Presenters and Coordinators. This app simply stores an AppContext in the AppConfiguration (where we put most of our config vars) for easy access.
