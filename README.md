@@ -1,15 +1,21 @@
 # MultipurposeSwiftCoffeeApp
 An iOS Swift app that showcases many features. 
 
-![Screenshot](images/1.png)
-![Screenshot](images/2.png)
-![Screenshot](images/3.png)
-![Screenshot](images/4.png)
+<img width="200" alt="Screenshot 2024-05-28 at 13 11 34" src="images/1.png">
+<img width="200" alt="Screenshot 2024-05-28 at 13 11 34" src="images/2.png">
+<img width="200" alt="Screenshot 2024-05-28 at 13 11 34" src="images/3.png">
+<img width="200" alt="Screenshot 2024-05-28 at 13 11 34" src="images/4.png">
 
+# Important  
+As you can see in the pictures, this is a very basic app in terms of UX. Nevertheless, in order to solidify my knowledge in developing iOS apps and play with stuff I have rarely used before, I created this project in order to present it further to my teacher at the Univeristy of Bucharest. Please bear in mind that the app uses the MVVM pattern. It is not perfect nor completed. I have worked on more complex apps using Routers, Presenters and Coordinators. This app simply stores an AppContext in the AppDelegate for easy access. Normally, AppContext should be created and used somewhere else. 
 
-As you can see in the pictures, this is a very basic app in terms of UX. Nevertheless, in order to solidify my knowledge in developing iOS apps and play with stuff I have never played before, I created this project in order to present it further to my teacher at the Univeristy of Bucharest. Please bear in mind that the app uses the MVVM pattern. It is not perfect nor completed.
+# What to do before?
 
+Download `GoogleService-Info.plist` from Firebase and then uncomment the specific lines in AppDelegate.  
 You need to have cocoapods installed and you must run *pod install* in terminal in the project directory. Then open the workspace of the app.
+
+# What to do before?
+
 
 ## So, what does it do? 
 
