@@ -20,6 +20,7 @@ class CafeDetailsViewController: UIViewController {
         textView.isEditable = false
         titleLabel.text = viewModel.title
         textView.text = viewModel.description
+        imageView.layer.cornerRadius = 8.0
         title = "Cafe Details"
         
         let buttonImageName = viewModel.isFavourite ? "fullStar" : "emptyStar"

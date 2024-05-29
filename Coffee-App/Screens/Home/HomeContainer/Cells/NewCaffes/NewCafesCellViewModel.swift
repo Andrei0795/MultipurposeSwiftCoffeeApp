@@ -19,10 +19,13 @@ class NewCafesCellViewModel: HomeCollectionCellViewModelProtocol {
         self.title = title
         self.imageString = imageLink
         self.image = CustomImageView.init(image: UIImage(named: "loadingImage"), highlightedImage: nil)
+    }
+    
+    func getImage() {
         self.image.imageLoaded = {
             self.imageLoaded?(self.image)
         }
-        if let imageLink = imageLink {
+        if let imageLink = imageString {
             self.image.downloaded(from: imageLink)
         }
     }

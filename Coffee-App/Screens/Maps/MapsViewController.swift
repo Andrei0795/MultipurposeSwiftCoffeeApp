@@ -99,18 +99,18 @@ class MapsViewController: UIViewController {
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
-
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.startUpdatingLocation()
-        }
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
 
 
         mapView.showsUserLocation = true
         if let user = mapView.userLocation.location?.coordinate{
             mapView.setCenter(user, animated: true)
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        locationManager.startUpdatingLocation()
     }
     
     func addOverlays() {

@@ -20,5 +20,4 @@ class AppContext {
 
         realmManager = RealmManager(config: config)
     }
-    
 }

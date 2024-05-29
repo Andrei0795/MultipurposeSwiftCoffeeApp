@@ -20,10 +20,17 @@ class NewCafesCell: UICollectionViewCell {
                 }
                 self.cafeImage.image = theImage.image
             }
+            cellViewModel.getImage()
         }
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
     }
     override func awakeFromNib() {
         super.awakeFromNib()
+        cafeImage.layer.cornerRadius = 8.0
         cafeImage.image = UIImage(named: "loadingImage")
     }
 }

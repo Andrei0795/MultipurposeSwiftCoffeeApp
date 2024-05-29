@@ -98,7 +98,7 @@ class CafeDetailsViewModel {
     }
     
     func tappedShowWebsite(navigationController: UINavigationController) {
-        if let websiteLink = cafe.websiteLink, let url = URL(string: websiteLink) {
+        if let websiteLink = cafe.websiteLink, !websiteLink.isEmpty, let url = URL(string: websiteLink) {
             let config = SFSafariViewController.Configuration()
             config.entersReaderIfAvailable = true
 

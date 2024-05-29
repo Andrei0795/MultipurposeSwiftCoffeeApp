@@ -71,7 +71,6 @@ class HomeViewController: UIViewController {
         animation.keyTimes = [0, 0.125, 0.25, 0.5, 0.625, 0.75, 0.875, 1]
         animation.duration = 0.5
         animation.isAdditive = true
-
         view.layer.add(animation, forKey: "shake")
     }
     
@@ -81,9 +80,7 @@ class HomeViewController: UIViewController {
         animation.values = [0, 10, -10, -5, 5, 0 ]
         animation.keyTimes = [0, 0.125, 0.25, 0.5, 0.625, 0.75, 1]
         animation.duration = 2
-        
         animation.isAdditive = true
-
         view.layer.add(animation, forKey: "position")
     }
     
@@ -130,5 +127,3 @@ extension HomeViewController: HomeViewModelDelegate {
         newsDescriptionLabel.text = newsItem.description
     }
 }
-
-

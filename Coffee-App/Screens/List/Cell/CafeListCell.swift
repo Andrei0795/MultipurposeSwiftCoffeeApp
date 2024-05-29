@@ -34,6 +34,7 @@ class CafeListCell: BaseTableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        cafeImage.layer.cornerRadius = 8.0
         cafeTitle.text = cellViewModel.title
         cafeImage.image = cellViewModel.image.image
     }
