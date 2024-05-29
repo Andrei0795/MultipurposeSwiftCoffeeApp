@@ -45,7 +45,7 @@ class HomeViewModel {
     }
     
     func loadNewsData() {
-        guard let url = URL(string:"https://api.jsonbin.io/b/60c9cd3b5ed58625fd11adba/2") else {
+        guard let url = URL(string:"https://ionescuandrei.com/apps/jsons/cafes.json") else {
             return
         }
         let urlReq = URLRequest(url: url)

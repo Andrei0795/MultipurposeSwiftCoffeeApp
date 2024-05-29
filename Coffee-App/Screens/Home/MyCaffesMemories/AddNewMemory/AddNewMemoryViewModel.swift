@@ -36,7 +36,7 @@ class AddNewMemoryViewModel {
         let uniqueID = String(Date().timeIntervalSince1970)
         let memory = Memory(id: uniqueID, title: textfieldText, memoryDescription: textViewText, imageData: image)
         let memoryRealmObject = MemoryRealmObject(memory: memory)
-        appDelegate.appContext.realmManager.saveMemoryObject(object: memoryRealmObject)
+        AppConfiguration.appContext.realmManager.saveMemoryObject(object: memoryRealmObject)
         dismissBlock?()
     }
 }

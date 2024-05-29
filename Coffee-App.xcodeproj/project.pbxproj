@@ -51,6 +51,7 @@
 		2245DC6926779FC50039D9F5 /* MemoryRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2245DC6826779FC50039D9F5 /* MemoryRealmObject.swift */; };
 		2245DC6F2677A1A00039D9F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2245DC6E2677A19F0039D9F5 /* GoogleService-Info.plist */; };
 		2245DC732677A3C00039D9F5 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2245DC722677A3C00039D9F5 /* AppContext.swift */; };
+		226B05F12C07E69B00884958 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226B05F02C07E69B00884958 /* AppConfiguration.swift */; };
 		228361D42677ED9B00384D3E /* HomeCollectionCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228361D32677ED9B00384D3E /* HomeCollectionCellViewModelProtocol.swift */; };
 		228361DB2677FE6200384D3E /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228361DA2677FE6200384D3E /* PinView.swift */; };
 		228361FA267962EA00384D3E /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228361F9267962EA00384D3E /* LocalNotificationManager.swift */; };
@@ -115,6 +116,7 @@
 		2245DC6826779FC50039D9F5 /* MemoryRealmObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryRealmObject.swift; sourceTree = "<group>"; };
 		2245DC6E2677A19F0039D9F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2245DC722677A3C00039D9F5 /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		226B05F02C07E69B00884958 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		228361D32677ED9B00384D3E /* HomeCollectionCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCellViewModelProtocol.swift; sourceTree = "<group>"; };
 		228361DA2677FE6200384D3E /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
 		228361F9267962EA00384D3E /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 				2245DC582676AE4D0039D9F5 /* Extensions */,
 				2222C89A266EC1B600563554 /* AppDelegate.swift */,
 				2245DC722677A3C00039D9F5 /* AppContext.swift */,
+				226B05F02C07E69B00884958 /* AppConfiguration.swift */,
 				22011B6726727B440019658E /* SceneDelegate.swift */,
 				2222C8A0266EC1B600563554 /* Main.storyboard */,
 				2245DC1B26767D5B0039D9F5 /* RealmManager.swift */,
@@ -531,6 +534,7 @@
 				2283620B267A134D00384D3E /* ImagePicker.swift in Sources */,
 				2222C8E02671003200563554 /* HomeCollectionViewModel.swift in Sources */,
 				22E8DC45267A2965009EEA5F /* MemoryListCell.swift in Sources */,
+				226B05F12C07E69B00884958 /* AppConfiguration.swift in Sources */,
 				2245DC732677A3C00039D9F5 /* AppContext.swift in Sources */,
 				2222C89B266EC1B600563554 /* AppDelegate.swift in Sources */,
 				2222C8D52670FFC100563554 /* AboutViewController.swift in Sources */,

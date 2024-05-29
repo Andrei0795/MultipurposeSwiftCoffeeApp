@@ -10,15 +10,13 @@ import UIKit
 class CafesListViewModel {
     
     private var cafesDatasource = [CafeListCellViewModel]()
-    private var appDelegate: AppDelegate!
     var dismissBlock: (() -> Void)?
     var isFavouriteList: Bool = false
     
     init(isFavouriteList: Bool = false) {
         self.isFavouriteList = isFavouriteList
-        appDelegate = UIApplication.shared.delegate as? AppDelegate
         if isFavouriteList {
-            guard let realmFavourites = appDelegate.appContext.realmManager.getFavouriteObjects() else {
+            guard let realmFavourites = AppConfiguration.appContext.realmManager.getFavouriteObjects() else {
                 return
             }
             var favourites = [Cafe]()
@@ -27,7 +25,7 @@ class CafesListViewModel {
             }
             setupDatasource(cafes: favourites)
         } else {
-            setupDatasource(cafes: appDelegate.appContext.cafesDatasource)
+            setupDatasource(cafes: AppConfiguration.appContext.cafesDatasource)
         }
     }
     
@@ -57,7 +55,7 @@ class CafesListViewModel {
         let vc = storyboard.instantiateViewController(withIdentifier: "CafeDetailsViewController") as! CafeDetailsViewController
         let vcViewModel = CafeDetailsViewModel(cafe: cafesDatasource[indexPath.row].cafe)
         vcViewModel.favouriteChanged = {
-            self.setupDatasource(cafes: self.appDelegate.appContext.cafesDatasource)
+            self.setupDatasource(cafes: AppConfiguration.appContext.cafesDatasource)
         }
         vc.viewModel = vcViewModel
         navigationController.pushViewController(vc, animated: true)

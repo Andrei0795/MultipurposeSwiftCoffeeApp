@@ -190,8 +190,8 @@
             filePath = "Coffee-App/Screens/List/CafeDetails/CafeDetailsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "init(cafe:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -209,22 +209,6 @@
             startingLineNumber = "28"
             endingLineNumber = "28"
             landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6E5DB92D-8CA6-49BF-89D0-DA7670DB0049"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Coffee-App/Screens/List/CafeDetails/CafeDetailsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "tappedAddToFavourites()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

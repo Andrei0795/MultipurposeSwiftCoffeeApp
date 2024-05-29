@@ -29,8 +29,7 @@ class Cafe {
     var isNew: Bool = false
     
     var type: CafeType {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if appDelegate.appContext.realmManager.getFavouriteObject(cafe: self) != nil {
+        if AppConfiguration.appContext.realmManager.getFavouriteObject(cafe: self) != nil {
             return .favourite
         }
         if let label = labels, label.contains("organic") {

@@ -20,8 +20,7 @@ class CafeDetailsViewModel {
     }
     
     var isFavourite: Bool {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        return appDelegate.appContext.realmManager.getFavouriteObject(cafe: cafe) != nil
+        return AppConfiguration.appContext.realmManager.getFavouriteObject(cafe: cafe) != nil
     }
     
     var description: String? {
@@ -65,14 +64,13 @@ class CafeDetailsViewModel {
     }
     
     func tappedAddToFavourites() {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
         cafe.isFavourite = !cafe.isFavourite
         
-        if let favourite =  appDelegate.appContext.realmManager.getFavouriteObject(cafe: cafe) {
-            appDelegate.appContext.realmManager.deleteFavouriteObject(object: favourite)
+        if let favourite =  AppConfiguration.appContext.realmManager.getFavouriteObject(cafe: cafe) {
+            AppConfiguration.appContext.realmManager.deleteFavouriteObject(object: favourite)
         } else {
             let favourite = FavouriteRealmObject(cafe: cafe)
-            appDelegate.appContext.realmManager.saveFavouriteObject(object: favourite)
+            AppConfiguration.appContext.realmManager.saveFavouriteObject(object: favourite)
         }
     }
     

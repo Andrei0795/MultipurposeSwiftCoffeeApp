@@ -36,7 +36,7 @@ class FirebaseService {
     
     func loadData() {
         appDelegate = UIApplication.shared.delegate as? AppDelegate
-        if !appDelegate.appContext.firebaseConfigured {
+        if !AppConfiguration.appContext.firebaseConfigured {
             fallbackForCafes()
             return
         }
@@ -47,11 +47,11 @@ class FirebaseService {
             if let version = snapshot.value as? Double {
                 print("The version from the database: \(version)")
                                                         
-                if self.appDelegate.appContext.realmManager.getDatabaseVersion()?.versionNumber == version {
+                if AppConfiguration.appContext.realmManager.getDatabaseVersion()?.versionNumber == version {
                     print("The version from the database: \(version) is not new! Will not update Realm!")
                     self.formCafeDatasource()
                 } else {
-                    self.appDelegate.appContext.realmManager.saveOrUpdateDatabaseVersion(versionNumber: version)
+                    AppConfiguration.appContext.realmManager.saveOrUpdateDatabaseVersion(versionNumber: version)
                     self.observeNewCafes()
                 }
             }
@@ -69,7 +69,7 @@ class FirebaseService {
                         newCafesIDsArray.append(theID)
                     }
                 }
-                self.appDelegate.appContext.newCafesIDsArray = newCafesIDsArray
+                AppConfiguration.appContext.newCafesIDsArray = newCafesIDsArray
                 self.observeAllCafes()
             }
         })
@@ -88,13 +88,13 @@ class FirebaseService {
     
     //Fallback if Firebase is not configured
     func fallbackForCafes() {
-        if self.appDelegate.appContext.realmManager.getDatabaseVersion()?.versionNumber == 0.1 {
+        if AppConfiguration.appContext.realmManager.getDatabaseVersion()?.versionNumber == 0.1 {
             self.formCafeDatasource()
             return
         }
         
         //store fallback version
-        self.appDelegate.appContext.realmManager.saveOrUpdateDatabaseVersion(versionNumber: 0.1)
+        AppConfiguration.appContext.realmManager.saveOrUpdateDatabaseVersion(versionNumber: 0.1)
 
         //get json
         var newCafes: [NSDictionary?]?
@@ -130,7 +130,7 @@ class FirebaseService {
                     newCafesIDsArray.append(theID)
                 }
             }
-            self.appDelegate.appContext.newCafesIDsArray = newCafesIDsArray
+            AppConfiguration.appContext.newCafesIDsArray = newCafesIDsArray
         }
         
         //get all cafes from json
@@ -144,11 +144,11 @@ class FirebaseService {
         for dictionary in dictionaryArray {
             if let dictionary = dictionary {
                 let cafeRealmObject = CafeRealmObject(dictionary: dictionary)
-                if let theID = cafeRealmObject.id,  appDelegate.appContext.newCafesIDsArray.contains(theID) {
+                if let theID = cafeRealmObject.id,  AppConfiguration.appContext.newCafesIDsArray.contains(theID) {
                     cafeRealmObject.isNew = true
                 }
                 
-                appDelegate.appContext.realmManager.saveOrUpdateCafeObject(object: cafeRealmObject)
+                AppConfiguration.appContext.realmManager.saveOrUpdateCafeObject(object: cafeRealmObject)
             }
         }
         formCafeDatasource()
@@ -156,7 +156,7 @@ class FirebaseService {
     
     func formCafeDatasource() {
         var newDatasource = [Cafe]()
-        guard let realmCafes = appDelegate.appContext.realmManager.getCafeObjects() else {
+        guard let realmCafes = AppConfiguration.appContext.realmManager.getCafeObjects() else {
             assertionFailure("This should not happen")
             return
         }
@@ -165,7 +165,7 @@ class FirebaseService {
             newDatasource.append(realmCafe.asCafe())
         }
         
-        appDelegate.appContext.cafesDatasource = newDatasource
+        AppConfiguration.appContext.cafesDatasource = newDatasource
         let newCafes = newDatasource.filter {
             $0.isNew
         }

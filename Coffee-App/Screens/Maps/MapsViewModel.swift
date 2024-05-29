@@ -14,8 +14,7 @@ class MapsViewModel {
     var filteredAnnotationsDatasource = [PinView]()
 
     func setupDatasource() {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let cafes = appDelegate.appContext.cafesDatasource
+        let cafes = AppConfiguration.appContext.cafesDatasource
         
         for cafe in cafes {
             if let lat = cafe.lat, let lon = cafe.lon {

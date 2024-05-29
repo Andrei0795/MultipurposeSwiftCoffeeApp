@@ -11,17 +11,14 @@ import Firebase
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var appContext: AppContext!
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        appContext = AppContext()
         
         //In order to configure Firebase, you must create your own app in the firebase console and populate GoogleService-Info.plist with the relevant app data
         //You also need to make sure cafes.json is imported in the realtime database section of Firebase
         //Be careful at the rules section for the realtime database. You must make sure your access does not expire
         //FirebaseApp.configure() UNCOMMENT THIS IF ALL THE STEPS ABOVE WERE COMPLETED
-        appContext.firebaseConfigured = false
+        AppConfiguration.appContext.firebaseConfigured = false
         
         return true
     }

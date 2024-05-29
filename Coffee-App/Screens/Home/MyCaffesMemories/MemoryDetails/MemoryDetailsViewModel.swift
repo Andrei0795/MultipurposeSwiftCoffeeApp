@@ -32,11 +32,10 @@ class MemoryDetailsViewModel {
     }
     
     func delete() {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        guard let realmMemoryObject = appDelegate.appContext.realmManager.getMemoryObject(memory: memory) else {
+        guard let realmMemoryObject = AppConfiguration.appContext.realmManager.getMemoryObject(memory: memory) else {
             return
         }
-        appDelegate.appContext.realmManager.deleteMemoryObject(object: realmMemoryObject)
+        AppConfiguration.appContext.realmManager.deleteMemoryObject(object: realmMemoryObject)
         deleteBlock?()
     }
 }

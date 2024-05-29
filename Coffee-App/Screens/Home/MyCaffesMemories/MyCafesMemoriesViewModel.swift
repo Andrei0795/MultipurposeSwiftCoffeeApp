@@ -26,9 +26,8 @@ class MyCafesMemoriesViewModel {
     
     func setupDatasource() {
         memoriesDatasource.removeAll()
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
-        guard let realmMemories = appDelegate.appContext.realmManager.getMemoryObjects() else {
+        guard let realmMemories = AppConfiguration.appContext.realmManager.getMemoryObjects() else {
             return
         }
         
